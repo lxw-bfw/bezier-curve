@@ -1,0 +1,49 @@
+<!--
+ * @Description: 
+ * @version: 
+ * @Author: lxw
+ * @Date: 2020-02-20 22:06:56
+ * @LastEditors: lxw
+ * @LastEditTime: 2020-02-21 19:50:06
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>path 贝塞三次尔曲线动态演示</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+ <h4>SVG三次贝塞尔曲线</h4>
+  <div class="grid" id="grid">
+    <svg width="750" height="500" id="besizer-svg">
+      <defs>
+        <g id="move-bensizer">
+          <path d="" fill="#000" stroke="#000" stroke-width="2" />
+          <!-- 绘制三次贝塞尔曲线的折线，你就知道了 -->
+          <polygon points="" style="stroke:black;stroke-width:1;" />
+          <!-- 下面四个点分别代表起点、终点，拐点1、拐点二，与d属性值相对应 -->
+          <circle id="point-start" cx="1" cy="1" r="20" stroke="" stroke-width="0" fill="#333333" />
+          <circle id="point-end" cx="1" cy="1" r="20" stroke="" stroke-width="0" fill="#333333" />
+          <circle id="point-controle1" cx="1" cy="1" r="20" stroke="" stroke-width="0" fill="#333333" />
+          <circle id="point-controle2" cx="1" cy="1" r="20" stroke="" stroke-width="0" fill="#333333" />
+          <text id="coordinate-show" x="350" y="450" text-anchor="left" stroke="#000" stroke-width="1"></text>
+          <text id="coordinate-show" x="400" y="470" text-anchor="left" stroke="#ccc" stroke-width="1">pc端观体验更佳</text>
+        </g>
+      </defs>
+      <use xlink:href="#move-bensizer" x="0" y="0" />
+    </svg>
+
+  </div>
+
+
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
